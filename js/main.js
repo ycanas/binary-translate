@@ -11,7 +11,7 @@ buttonBinary.onclick = function() {
     const input = document.getElementById('inputText').value;
     let output = "";
 
-    if (input == '') {
+    if (!input) {
         divOutput.innerHTML = "";
         document.getElementById('divOutput').className = "";
         return;
